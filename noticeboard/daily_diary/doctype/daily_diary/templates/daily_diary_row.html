@@ -1,4 +1,7 @@
-<div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+<div class="row border-top">
+	<div class="col-6"><a href="{{ doc.route }}" class="h5 text-info">{{ doc.title or doc.name }}</a></div>
+	<div class="col"><p class="float-right">{{class}}</p></div>
+	<div class="col"><p class="float-right">{{subject}}</p></div>
+	<div class="col"><p class="float-right">{{frappe.format_date(date)}}</p></div>
 </div>
 <!-- this is a sample default list template -->
